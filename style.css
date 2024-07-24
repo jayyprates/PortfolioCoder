@@ -27,9 +27,12 @@ body {
 #navbar a {
     text-decoration: none;
     font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    color: #C24B59;
     font-size: 19px;
     margin-left: 20px;
+}
+
+.pinkcolor {
+    color: #C24B59;
 }
 
 #homecontent {
@@ -62,4 +65,20 @@ body {
 #homedescription {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
     width: 80%;
+}
+
+#icons {
+    display: flex;
+    flex-direction: row;
+    margin-left: 80px;
+}
+
+#icons img {
+    width: 6%;
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+#linkedin {
+    color: #7690b0; 
 }
