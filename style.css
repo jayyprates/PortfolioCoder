@@ -10,6 +10,9 @@ code { font-family: 'Fira Code', monospace; }
 code { font-family: 'Fira Code VF', monospace; }
 }
 
+* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;} 
+
+
 
 #menu {
     display: flex;
@@ -34,14 +37,19 @@ code { font-family: 'Fira Code VF', monospace; }
 
 
 #navbar a {
-    text-decoration: none;
     font-family: 'Fira Code', monospace; 
     font-size: 19px;
     margin-left: 20px;
 }
 
 .pinkcolor {
+    text-decoration: none;
     color: #C24B59;
+}
+
+.pinkcolor:hover{
+    color: #5C97DB;
+    text-decoration: underline;
 }
 
 .bluecolor {
