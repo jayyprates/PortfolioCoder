@@ -2,6 +2,15 @@ body {
     background-image: url(./img/background.png);
 }
 
+@import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
+
+code { font-family: 'Fira Code', monospace; }
+
+@supports (font-variation-settings: normal) {
+code { font-family: 'Fira Code VF', monospace; }
+}
+
+
 #menu {
     display: flex;
     flex-direction: row;
@@ -26,13 +35,17 @@ body {
 
 #navbar a {
     text-decoration: none;
-    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fira Code', monospace; 
     font-size: 19px;
     margin-left: 20px;
 }
 
 .pinkcolor {
     color: #C24B59;
+}
+
+.bluecolor {
+    color: #5C97DB;
 }
 
 #homecontent {
@@ -49,7 +62,7 @@ body {
 
 #hometitle, #hometitle2 {
     color: #313336;
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-family: 'Fira Code', monospace; 
 }
 
 #home {
@@ -81,4 +94,56 @@ body {
 
 #linkedin {
     color: #7690b0; 
+}
+
+#projects {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    font-family: 'Fira Code', monospace; 
+}
+
+#projects img {
+    max-width: 600px;
+}
+
+.projectbox { 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+#aboutimage img {
+    max-width: 400px;
+}
+
+#aboutme {
+    display: flex;
+    align-items: center;
+    justify-content: space-around; 
+    margin-top: 40px;
+}
+
+#aboutme p {
+    max-width: 500px;
+    font-family: 'Fira Code', monospace;
+}
+
+#aboutlink a {
+    font-family: 'Fira Code', monospace;
+    margin-right: 10px;
+    
+}
+
+.firecode {
+    font-family: 'Fira Code', monospace;
+}
+
+#contact {
+    display: flex;
+    flex-direction: column;
+    margin-left: 100px;
+    margin-top: 50px; 
 }
