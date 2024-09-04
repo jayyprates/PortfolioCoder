@@ -13,26 +13,27 @@ code { font-family: 'Fira Code VF', monospace; }
 * {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;} 
 
 
+header, main {
+    padding: 0px 150px;
+}
+
+main {
+    display: flex;
+}
 
 #menu {
     display: flex;
     flex-direction: row;
     align-items: center;
+    justify-content: space-between;
 }
 
 #logo {
     width: 200px;
-    margin-left: 60px;
 }
 
 #logo img {
     max-width: 100%;
-}
-
-#navbar {
-    display: flex;
-    justify-content: center;
-    flex-grow: 1;
 }
 
 
@@ -61,7 +62,6 @@ code { font-family: 'Fira Code VF', monospace; }
     display: flex;
     flex-direction: row;
     justify-content: center;
-    margin-top: 20px;
 }
 
 #banner {
@@ -73,6 +73,14 @@ code { font-family: 'Fira Code VF', monospace; }
     font-family: 'Fira Code', monospace; 
 }
 
+#hometitle {
+    margin-bottom: 0px;
+}
+
+#hometitle2 {
+    margin-top: 15px;
+}
+
 #home {
     width: 100%;
     display: flex;
@@ -80,7 +88,9 @@ code { font-family: 'Fira Code VF', monospace; }
 }
 
 #hometext {
-    margin-top: 120px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 #homedescription {
@@ -91,7 +101,6 @@ code { font-family: 'Fira Code VF', monospace; }
 #icons {
     display: flex;
     flex-direction: row;
-    margin-left: 80px;
 }
 
 #icons img {
