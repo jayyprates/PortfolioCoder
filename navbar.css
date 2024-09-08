@@ -1,0 +1,39 @@
+header {
+    padding: 0px 150px;
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+}
+
+#logo {
+    width: 200px;
+}
+
+#logo img {
+    max-width: 100%;
+}
+
+
+#navbar a {
+    font-family: 'Fira Code', monospace; 
+    font-size: 19px;
+    margin-left: 20px;
+}
+
+.pinkcolor {
+    text-decoration: none;
+    color: #C24B59;
+}
+
+.pinkcolor:hover{
+    color: #5C97DB;
+    text-decoration: underline;
+}
+
+.bluecolor {
+    color: #5C97DB;
+}

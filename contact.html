@@ -3,37 +3,42 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
     <title>Contact</title>
 </head>
 <body>
-    <div id="menu">
-        <div id="logo">
-            <img src="./img/Logo.png" alt="Logo do Porftolio de Joana Prates">
-        </div>
+    <header>
+        <div id="menu">
+            <div id="logo">
+                <img src="./img/Logo.png" alt="Logo do Porftolio de Joana Prates">
+            </div>
 
-        <div id="navbar">
-            <a href="./index.html" class="pinkcolor">Home</a>
-            <a href="./projects.html" class="pinkcolor">Projects</a>
-            <a href="./about.html" class="pinkcolor">About</a>
-            <a href="#" class="pinkcolor">Contact</a>
+            <div id="navbar">
+                <a href="#" class="pinkcolor">Home</a>
+                <a href="./projects.html" class="pinkcolor">Projects</a>
+                <a href="./about.html" class="pinkcolor">About</a>
+                <a href="./contact.html" class="pinkcolor">Contact</a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div id="contact">
-        <div id="contacttitle" class="firecode">
-            <h2 class="pinkcolor">Contact Me</h2>
-        </div> 
+    <main id="contactpage">
+        <div id="contact">
+            <div id="contacttitle" class="firecode contact_section">
+                <h2 class="pinkcolor">Contact Me</h2>
+            </div> 
 
-        <div id="contactlink" class="firecode">
-            <a href="https://www.linkedin.com/in/joana-prates/" target="_blank">LinkedIn</a>
+            <div id="contactlink" class="firecode contact_section">
+                <a href="https://www.linkedin.com/in/joana-prates/" target="_blank">LinkedIn</a>
+            </div>
+
+            <div id="contactmail" class="firecode contact_section">
+                <a href="#" id="mailbutton">Send me an email</a>
+            </div>
         </div>
+    </main>
 
-        <div id="contactmail" class="firecode">
-            <a href="#" id="mailbutton">Send me an email</a>
-        </div>
-    </div> 
-    
     <script src="script.js"></script>
 </body>
 </html>

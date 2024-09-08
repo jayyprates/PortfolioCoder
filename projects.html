@@ -3,46 +3,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="navbar.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css">
     <title>Projects</title>
 </head>
 
 <body>
-    <div id="menu">
-        <div id="logo">
-            <img src="./img/Logo.png" alt="Logo do Porftolio de Joana Prates">
-        </div>
+    <header>
+        <div id="menu">
+            <div id="logo">
+                <img src="./img/Logo.png" alt="Logo do Porftolio de Joana Prates">
+            </div>
 
-        <div id="navbar">
-            <a href="./index.html" class="pinkcolor">Home</a>
-            <a href="#" class="pinkcolor">Projects</a>
-            <a href="./about.html" class="pinkcolor">About</a>
-            <a href="./contact.html" class="pinkcolor">Contact</a>
+            <div id="navbar">
+                <a href="./index.html" class="pinkcolor">Home</a>
+                <a href="#" class="pinkcolor">Projects</a>
+                <a href="./about.html" class="pinkcolor">About</a>
+                <a href="./contact.html" class="pinkcolor">Contact</a>
+            </div>
         </div>
-    </div>
+    </header>
 
-    <div id="projects">
-        <div id="project1" class="projectbox">
-            <img src="./img/pokefind.png" alt="">
-            <a href="https://jayyprates.github.io/pokefind/" target="_blank" class="pinkcolor">PokeFind</a>
-            <p>A simple app to find information about classic Pokemons.</p>
-            <p class="bluecolor"><b>technologies: HTML, CSS, JavaScript</b></p>
-        </div>
-        <div id="project2" class="projectbox">
-            <img src="./img/mariolanding.png" alt="">
-            <a href="https://jayyprates.github.io/mario-landingpage/" target="_blank" class="pinkcolor">MarioClub Landing Page</a>
-            <p>A simple MarioClub Landing Page.</p>
-            <p class="bluecolor"><b>technologies: HTML, CSS</b></p>
-        </div>
-        <div id="project3" class="projectbox">
-            <img src="./img/digitalmarketinglanding.png" alt="">
-            <a href="https://sage-pastelito-ad8f8e.netlify.app" target="_blank" class="pinkcolor">Digital Marketing Landing Page</a>
-            <p>A simple Digital Marketing Place Landing Page.</p>
-            <p class="bluecolor"><b>technologies: HTML, CSS</b></p>
-        </div>
+    <main id="projectpage">
+        <div id="projects">
+            <div id="line1" class="row">
+                <div id="project1" class="projectbox">
+                    <img src="./img/pokefind.png" alt="">
+                    <a href="https://jayyprates.github.io/pokefind/" target="_blank" class="pinkcolor projectlink">PokeFind</a>
+                    <p>A simple app to find information about classic Pokemons.</p>
+                    <p class="bluecolor"><b>technologies: HTML, CSS, JavaScript</b></p>
+                </div>
+                <div id="project2" class="projectbox">
+                    <img src="./img/mariolanding.png" alt="">
+                    <a href="https://jayyprates.github.io/mario-landingpage/" target="_blank" class="pinkcolor projectlink">MarioClub Landing Page</a>
+                    <p>A simple MarioClub Landing Page.</p>
+                    <p class="bluecolor"><b>technologies: HTML, CSS</b></p>
+                </div>
+            </div>
 
-    </div>
-
+            <div id="line2" class="row">
+                <div id="project3" class="projectbox">
+                    <img src="./img/digitalmarketinglanding.png" alt="">
+                    <a href="https://sage-pastelito-ad8f8e.netlify.app" target="_blank" class="pinkcolor projectlink">Digital Marketing Landing Page</a>
+                    <p>A simple Digital Marketing Place Landing Page.</p>
+                    <p class="bluecolor"><b>technologies: HTML, CSS</b></p>
+                </div>
+        
+                <div id="project4" class="projectbox">
+                    <img src="./img/slowlylanding.png" alt="">
+                    <a href="https://jayyprates.github.io/slowly-landingpage/" target="_blank" class="pinkcolor projectlink">Slowly Landing Page</a>
+                    <p>A copy of the Slowly login page. </p>
+                    <p class="bluecolor"><b>technologies: HTML, CSS</b></p>
+                </div>
+            </div>
+        </div>
+    </main>
 
 
 </body>

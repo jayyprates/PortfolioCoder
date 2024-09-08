@@ -10,52 +10,24 @@ code { font-family: 'Fira Code', monospace; }
 code { font-family: 'Fira Code VF', monospace; }
 }
 
-* {cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;} 
+* {
+    box-sizing: border-box;
+    cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;
+} 
 
 
-header, main {
+#indexpage, #projectpage, #aboutpage {
+    display: flex;
     padding: 0px 150px;
 }
 
-main {
+#contactpage {
     display: flex;
-}
-
-#menu {
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-}
-
-#logo {
-    width: 200px;
-}
-
-#logo img {
-    max-width: 100%;
+    padding: 0px 150px;
+    flex-direction: column;
 }
 
 
-#navbar a {
-    font-family: 'Fira Code', monospace; 
-    font-size: 19px;
-    margin-left: 20px;
-}
-
-.pinkcolor {
-    text-decoration: none;
-    color: #C24B59;
-}
-
-.pinkcolor:hover{
-    color: #5C97DB;
-    text-decoration: underline;
-}
-
-.bluecolor {
-    color: #5C97DB;
-}
 
 #homecontent {
     width: 80%;
@@ -118,10 +90,11 @@ main {
     flex-direction: column; 
     align-items: center;
     font-family: 'Fira Code', monospace; 
+    width: 100%;
 }
 
 #projects img {
-    max-width: 600px;
+    max-width: 100%;
 }
 
 .projectbox { 
@@ -130,6 +103,7 @@ main {
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
+    width: 48%;
 }
 
 #aboutimage img {
@@ -139,8 +113,9 @@ main {
 #aboutme {
     display: flex;
     align-items: center;
-    justify-content: space-around; 
+    justify-content: space-between; 
     margin-top: 40px;
+    width: 100%;
 }
 
 #aboutme p {
@@ -154,6 +129,13 @@ main {
     
 }
 
+#abouttext {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    width: 48%;
+}
+
 .firecode {
     font-family: 'Fira Code', monospace;
 }
@@ -161,6 +143,18 @@ main {
 #contact {
     display: flex;
     flex-direction: column;
-    margin-left: 100px;
-    margin-top: 50px; 
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.projectlink {
+    margin-top: 10px;
+}
+
+.contact_section {
+    margin-bottom: 10px;
 }
