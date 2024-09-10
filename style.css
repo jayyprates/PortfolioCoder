@@ -4,28 +4,31 @@ body {
 
 @import url(https://cdn.jsdelivr.net/npm/firacode@6.2.0/distr/fira_code.css);
 
-code { font-family: 'Fira Code', monospace; }
+code {
+    font-family: 'Fira Code', monospace;
+}
 
 @supports (font-variation-settings: normal) {
-code { font-family: 'Fira Code VF', monospace; }
+    code {
+        font-family: 'Fira Code VF', monospace;
+    }
 }
 
 * {
     box-sizing: border-box;
     cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;
-} 
-
-
-#indexpage, #projectpage, #aboutpage {
-    display: flex;
-    padding: 0px 150px;
 }
 
-#contactpage {
+
+#indexpage,
+#projectpage,
+#contactpage,
+#aboutpage {
     display: flex;
-    padding: 0px 150px;
     flex-direction: column;
+    padding: 0px 10px;
 }
+
 
 
 
@@ -37,12 +40,13 @@ code { font-family: 'Fira Code VF', monospace; }
 }
 
 #banner {
-    width: 400px;
+    width: 100%;
 }
 
-#hometitle, #hometitle2 {
+#hometitle,
+#hometitle2 {
     color: #313336;
-    font-family: 'Fira Code', monospace; 
+    font-family: 'Fira Code', monospace;
 }
 
 #hometitle {
@@ -63,6 +67,14 @@ code { font-family: 'Fira Code VF', monospace; }
     display: flex;
     flex-direction: column;
     justify-content: center;
+    width: 100%;
+    order: 1;
+}
+
+#homebanner {
+    width: 100%;
+    order: 0;
+    margin: 50px 0;
 }
 
 #homedescription {
@@ -82,14 +94,14 @@ code { font-family: 'Fira Code VF', monospace; }
 }
 
 #linkedin {
-    color: #7690b0; 
+    color: #7690b0;
 }
 
 #projects {
     display: flex;
-    flex-direction: column; 
+    flex-direction: column;
     align-items: center;
-    font-family: 'Fira Code', monospace; 
+    font-family: 'Fira Code', monospace;
     width: 100%;
 }
 
@@ -97,13 +109,20 @@ code { font-family: 'Fira Code VF', monospace; }
     max-width: 100%;
 }
 
-.projectbox { 
+.projectbox {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-top: 30px;
     margin-bottom: 30px;
-    width: 48%;
+    width: 100%;
+}
+
+#aboutimage {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #aboutimage img {
@@ -112,8 +131,9 @@ code { font-family: 'Fira Code VF', monospace; }
 
 #aboutme {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between; 
+    justify-content: space-between;
     margin-top: 40px;
     width: 100%;
 }
@@ -126,14 +146,14 @@ code { font-family: 'Fira Code VF', monospace; }
 #aboutlink a {
     font-family: 'Fira Code', monospace;
     margin-right: 10px;
-    
+
 }
 
 #abouttext {
     display: flex;
     flex-direction: column;
     align-items: flex-end;
-    width: 48%;
+    width: 100%;
 }
 
 .firecode {
@@ -149,6 +169,7 @@ code { font-family: 'Fira Code VF', monospace; }
     display: flex;
     width: 100%;
     justify-content: space-between;
+    flex-direction: column;
 }
 
 .projectlink {
@@ -157,4 +178,85 @@ code { font-family: 'Fira Code VF', monospace; }
 
 .contact_section {
     margin-bottom: 10px;
+}
+
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #hometext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        order: 0;
+    }
+    
+    #homebanner {
+        width: 50%;
+        order: 1;
+        margin: unset;
+    }
+
+    #indexpage {
+        flex-direction: row;
+    }
+
+    #indexpage,
+    #projectpage,
+    #contactpage,
+    #aboutpage {
+        display: flex;
+        padding: 0px 50px;
+    }
+
+    #aboutme {
+        flex-direction: row;
+    }
+
+    #abouttext {
+        margin-left: 35px;
+    }
+}
+
+@media (min-width: 900px) {
+    #hometext {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 50%;
+        order: 0;
+    }
+    
+    #homebanner {
+        width: 50%;
+        order: 1;
+        margin: unset;
+    }
+
+    #indexpage {
+        flex-direction: row;
+    }
+
+    #indexpage,
+    #projectpage,
+    #contactpage,
+    #aboutpage {
+        display: flex;
+        padding: 0px 150px;
+    }
+
+    .projectbox {
+        width: 48%;
+    }
+
+    .row {
+        flex-direction: row;
+    }
+
+    #aboutme {
+        flex-direction: row;
+    }
+
+    #abouttext {
+        margin-left: 35px;
+    }
 }

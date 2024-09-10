@@ -1,12 +1,12 @@
 header {
-    padding: 0px 150px;
+    padding: 0px 10px;
 }
 
 #menu {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+
 }
 
 #logo {
@@ -17,10 +17,13 @@ header {
     max-width: 100%;
 }
 
+#navbar {
+    margin-top: 25px;
+}
 
 #navbar a {
     font-family: 'Fira Code', monospace; 
-    font-size: 19px;
+    font-size: 0.9em;
     margin-left: 20px;
 }
 
@@ -36,4 +39,42 @@ header {
 
 .bluecolor {
     color: #5C97DB;
+}
+
+@media (min-width: 600px) and (max-width: 900px) {
+    #navbar {
+        margin-top: unset;
+    }
+
+    #menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 0px 50px;
+    }
+
+    #navbar a {
+        font-size: 0.9em;
+    }
+}
+
+@media (min-width: 900px) {
+    #navbar {
+        margin-top: unset;
+    }
+
+    #menu {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    header {
+        padding: 0px 150px;
+    }
+
+    #navbar a {
+        font-size: 1em;
+    }
 }
