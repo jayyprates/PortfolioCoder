@@ -14,9 +14,9 @@ code {
     }
 }
 
-* {
+body {
     box-sizing: border-box;
-    cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto !important;
+    cursor: url(https://cur.cursors-4u.net/nature/nat-10/nat985.cur), auto;
 }
 
 
@@ -79,18 +79,18 @@ code {
 
 #homedescription {
     font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
-    width: 80%;
+    width: 100%;
 }
 
 #icons {
     display: flex;
     flex-direction: row;
+    justify-content: space-around;
+    padding-top: 10px;
 }
 
 #icons img {
-    width: 6%;
-    margin-left: 20px;
-    margin-top: 10px;
+    width: 2rem;
 }
 
 #linkedin {
@@ -116,6 +116,15 @@ code {
     margin-top: 30px;
     margin-bottom: 30px;
     width: 100%;
+    background-color: #bad4f5;
+    border-radius: 15px;
+    cursor: pointer;
+}
+
+
+.projectbox p {
+    width: 80%;
+    text-align: center;
 }
 
 #aboutimage {
@@ -140,7 +149,7 @@ code {
 
 #aboutme p {
     max-width: 500px;
-    font-family: 'Fira Code', monospace;
+
 }
 
 #aboutlink a {
@@ -154,6 +163,7 @@ code {
     flex-direction: column;
     align-items: flex-end;
     width: 100%;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
 
 .firecode {
